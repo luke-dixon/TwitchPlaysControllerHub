@@ -7,11 +7,11 @@ namespace TwitchPlaysHub
     */
     public class PingSender
     {
-        private IrcClient _irc;
+        private TwitchClientInterface _irc;
         private Thread pingSender;
 
         // Empty constructor makes instance of Thread
-        public PingSender(IrcClient irc)
+        public PingSender(TwitchClientInterface irc)
         {
             _irc = irc;
             pingSender = new Thread(new ThreadStart(this.Run));

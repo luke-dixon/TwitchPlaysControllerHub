@@ -33,19 +33,36 @@
             this.TwitchOAuthTextbox = new System.Windows.Forms.TextBox();
             this.ActionMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.ControlPanel1 = new System.Windows.Forms.Panel();
+            this.ModOnlyCheckBox = new System.Windows.Forms.CheckBox();
+            this.CommandPressDelayLabel = new System.Windows.Forms.Label();
+            this.CommandTypeLabel = new System.Windows.Forms.Label();
+            this.CommandOutputLabel = new System.Windows.Forms.Label();
+            this.CommandInputLabel = new System.Windows.Forms.Label();
+            this.CommandNameLabel = new System.Windows.Forms.Label();
+            this.CommandTypeBox = new System.Windows.Forms.ComboBox();
+            this.KeyPressDelay = new System.Windows.Forms.NumericUpDown();
+            this.CommandName = new System.Windows.Forms.TextBox();
+            this.CommandCaseSensitiveBox = new System.Windows.Forms.CheckBox();
+            this.DeleteControlButton = new System.Windows.Forms.Button();
+            this.AddControlButton = new System.Windows.Forms.Button();
+            this.OutputBox = new System.Windows.Forms.TextBox();
+            this.CommandEnabledCheckbox = new System.Windows.Forms.CheckBox();
+            this.CommandBox = new System.Windows.Forms.TextBox();
+            this.MasterControlList = new System.Windows.Forms.ListBox();
+            this.RemindersPanel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ReminderTypeBox = new System.Windows.Forms.ComboBox();
+            this.ReminderTimerBox = new System.Windows.Forms.NumericUpDown();
+            this.ReminderNameBox = new System.Windows.Forms.TextBox();
+            this.RemoveReminderButton = new System.Windows.Forms.Button();
+            this.AddReminderButton = new System.Windows.Forms.Button();
+            this.ReminderTextBox = new System.Windows.Forms.TextBox();
+            this.RemindersListBox = new System.Windows.Forms.ListBox();
             this.SettingsPanel1 = new System.Windows.Forms.Panel();
-            this.SettingsComboBox = new System.Windows.Forms.ComboBox();
-            this.DeleteLurkerButton = new System.Windows.Forms.Button();
-            this.AddLurkerButton = new System.Windows.Forms.Button();
-            this.AddLurkerTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.LurkList = new System.Windows.Forms.ListBox();
-            this.SettingsLabel = new System.Windows.Forms.Label();
-            this.AddModTextBox = new System.Windows.Forms.TextBox();
-            this.DeleteModButton = new System.Windows.Forms.Button();
-            this.TwitchChatModeratorsLabel = new System.Windows.Forms.Label();
-            this.AddModButton = new System.Windows.Forms.Button();
-            this.ModList = new System.Windows.Forms.ListBox();
             this.ControlsSubPanel1 = new System.Windows.Forms.Panel();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -58,6 +75,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LurkingModeLabel = new System.Windows.Forms.Label();
+            this.SettingsSubPanel1 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SettingsComboBox = new System.Windows.Forms.ComboBox();
+            this.DeleteLurkerButton = new System.Windows.Forms.Button();
+            this.AddLurkerButton = new System.Windows.Forms.Button();
+            this.AddLurkerTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LurkList = new System.Windows.Forms.ListBox();
+            this.SettingsLabel = new System.Windows.Forms.Label();
+            this.AddModTextBox = new System.Windows.Forms.TextBox();
+            this.DeleteModButton = new System.Windows.Forms.Button();
+            this.TwitchChatModeratorsLabel = new System.Windows.Forms.Label();
+            this.AddModButton = new System.Windows.Forms.Button();
+            this.ModList = new System.Windows.Forms.ListBox();
             this.RafflesSubPanel1 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
@@ -80,29 +113,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.RemindersSubPanel1 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
-            this.SettingsSubPanel1 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ControlPanel1 = new System.Windows.Forms.Panel();
-            this.ModOnlyCheckBox = new System.Windows.Forms.CheckBox();
-            this.CommandPressDelayLabel = new System.Windows.Forms.Label();
-            this.CommandTypeLabel = new System.Windows.Forms.Label();
-            this.CommandOutputLabel = new System.Windows.Forms.Label();
-            this.CommandInputLabel = new System.Windows.Forms.Label();
-            this.CommandNameLabel = new System.Windows.Forms.Label();
-            this.CommandTypeBox = new System.Windows.Forms.ComboBox();
-            this.KeyPressDelay = new System.Windows.Forms.NumericUpDown();
-            this.CommandName = new System.Windows.Forms.TextBox();
-            this.CommandCaseSensitiveBox = new System.Windows.Forms.CheckBox();
-            this.DeleteControlButton = new System.Windows.Forms.Button();
-            this.AddControlButton = new System.Windows.Forms.Button();
-            this.OutputBox = new System.Windows.Forms.TextBox();
-            this.CommandEnabledCheckbox = new System.Windows.Forms.CheckBox();
-            this.CommandBox = new System.Windows.Forms.TextBox();
-            this.MasterControlList = new System.Windows.Forms.ListBox();
-            this.WindowListPanel1 = new System.Windows.Forms.Panel();
-            this.ActiveWindowsBox = new System.Windows.Forms.ListBox();
             this.RafflesPanel1 = new System.Windows.Forms.Panel();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -120,6 +130,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
+            this.WindowListPanel1 = new System.Windows.Forms.Panel();
+            this.ActiveWindowsBox = new System.Windows.Forms.ListBox();
             this.MacroPanel1 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -131,23 +143,18 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.RemindersPanel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.ReminderTypeBox = new System.Windows.Forms.ComboBox();
-            this.ReminderTimerBox = new System.Windows.Forms.NumericUpDown();
-            this.ReminderNameBox = new System.Windows.Forms.TextBox();
-            this.RemoveReminderButton = new System.Windows.Forms.Button();
-            this.AddReminderButton = new System.Windows.Forms.Button();
-            this.ReminderTextBox = new System.Windows.Forms.TextBox();
-            this.RemindersListBox = new System.Windows.Forms.ListBox();
             this.MainMenuStripControl = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.focusGameWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.controlsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadControllerProfileToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveControllerProfileToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.remindersToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadReminderProfileToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveReminderProfileToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rafflesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.macrosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.OAuthCodeButton = new System.Windows.Forms.Button();
             this.ConnectButton = new System.Windows.Forms.Button();
             this.SendTwitchMessage = new System.Windows.Forms.Button();
@@ -206,13 +213,8 @@
             this.CheckIRCChatInfo = new System.Windows.Forms.Timer(this.components);
             this.BackgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.focusGameWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadControllerProfileToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveControllerProfileToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadReminderProfileToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveReminderProfileToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rafflesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.macrosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TwitchChatClientChoice = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.AllowOverlappingTriggers = new System.Windows.Forms.CheckBox();
             this.AllowMultipleTriggersCheckbox = new System.Windows.Forms.CheckBox();
             this.EnableLurkingCheckBox = new System.Windows.Forms.CheckBox();
@@ -225,20 +227,20 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.ControlPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KeyPressDelay)).BeginInit();
+            this.RemindersPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ReminderTimerBox)).BeginInit();
             this.SettingsPanel1.SuspendLayout();
             this.ControlsSubPanel1.SuspendLayout();
+            this.SettingsSubPanel1.SuspendLayout();
             this.RafflesSubPanel1.SuspendLayout();
             this.MacrosSubPanel1.SuspendLayout();
             this.RemindersSubPanel1.SuspendLayout();
-            this.SettingsSubPanel1.SuspendLayout();
-            this.ControlPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.KeyPressDelay)).BeginInit();
-            this.WindowListPanel1.SuspendLayout();
             this.RafflesPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.WindowListPanel1.SuspendLayout();
             this.MacroPanel1.SuspendLayout();
-            this.RemindersPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReminderTimerBox)).BeginInit();
             this.MainMenuStripControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReconnectDelayTimeBox)).BeginInit();
@@ -282,6 +284,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.label6);
+            this.splitContainer1.Panel2.Controls.Add(this.TwitchChatClientChoice);
             this.splitContainer1.Panel2.Controls.Add(this.OAuthCodeButton);
             this.splitContainer1.Panel2.Controls.Add(this.ConnectButton);
             this.splitContainer1.Panel2.Controls.Add(this.SendTwitchMessage);
@@ -297,586 +301,6 @@
             this.splitContainer1.Size = new System.Drawing.Size(984, 446);
             this.splitContainer1.SplitterDistance = 500;
             this.splitContainer1.TabIndex = 2;
-            // 
-            // SettingsPanel1
-            // 
-            this.SettingsPanel1.Controls.Add(this.ControlsSubPanel1);
-            this.SettingsPanel1.Controls.Add(this.SettingsSubPanel1);
-            this.SettingsPanel1.Controls.Add(this.SettingsComboBox);
-            this.SettingsPanel1.Controls.Add(this.DeleteLurkerButton);
-            this.SettingsPanel1.Controls.Add(this.AddLurkerButton);
-            this.SettingsPanel1.Controls.Add(this.AddLurkerTextBox);
-            this.SettingsPanel1.Controls.Add(this.label2);
-            this.SettingsPanel1.Controls.Add(this.LurkList);
-            this.SettingsPanel1.Controls.Add(this.SettingsLabel);
-            this.SettingsPanel1.Controls.Add(this.AddModTextBox);
-            this.SettingsPanel1.Controls.Add(this.DeleteModButton);
-            this.SettingsPanel1.Controls.Add(this.TwitchChatModeratorsLabel);
-            this.SettingsPanel1.Controls.Add(this.AddModButton);
-            this.SettingsPanel1.Controls.Add(this.ModList);
-            this.SettingsPanel1.Controls.Add(this.RafflesSubPanel1);
-            this.SettingsPanel1.Controls.Add(this.MacrosSubPanel1);
-            this.SettingsPanel1.Controls.Add(this.RemindersSubPanel1);
-            this.SettingsPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SettingsPanel1.Location = new System.Drawing.Point(0, 27);
-            this.SettingsPanel1.Name = "SettingsPanel1";
-            this.SettingsPanel1.Size = new System.Drawing.Size(498, 417);
-            this.SettingsPanel1.TabIndex = 20;
-            this.SettingsPanel1.Visible = false;
-            // 
-            // SettingsComboBox
-            // 
-            this.SettingsComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SettingsComboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsComboBox.FormattingEnabled = true;
-            this.SettingsComboBox.ItemHeight = 19;
-            this.SettingsComboBox.Items.AddRange(new object[] {
-            "Behavior",
-            "Controls",
-            "Macros",
-            "Reminders",
-            "Raffles"});
-            this.SettingsComboBox.Location = new System.Drawing.Point(265, 2);
-            this.SettingsComboBox.Name = "SettingsComboBox";
-            this.SettingsComboBox.Size = new System.Drawing.Size(229, 27);
-            this.SettingsComboBox.TabIndex = 57;
-            this.SettingsComboBox.Text = "Controls";
-            this.SettingsComboBox.SelectedIndexChanged += new System.EventHandler(this.SettingsComboBox_SelectedIndexChanged);
-            // 
-            // DeleteLurkerButton
-            // 
-            this.DeleteLurkerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteLurkerButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteLurkerButton.Location = new System.Drawing.Point(174, 389);
-            this.DeleteLurkerButton.Name = "DeleteLurkerButton";
-            this.DeleteLurkerButton.Size = new System.Drawing.Size(26, 26);
-            this.DeleteLurkerButton.TabIndex = 48;
-            this.DeleteLurkerButton.Text = "-";
-            this.DeleteLurkerButton.UseVisualStyleBackColor = true;
-            this.DeleteLurkerButton.Click += new System.EventHandler(this.DeleteLurkerButton_Click);
-            // 
-            // AddLurkerButton
-            // 
-            this.AddLurkerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddLurkerButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddLurkerButton.Location = new System.Drawing.Point(142, 389);
-            this.AddLurkerButton.Name = "AddLurkerButton";
-            this.AddLurkerButton.Size = new System.Drawing.Size(26, 26);
-            this.AddLurkerButton.TabIndex = 47;
-            this.AddLurkerButton.Text = "+";
-            this.AddLurkerButton.UseVisualStyleBackColor = true;
-            this.AddLurkerButton.Click += new System.EventHandler(this.AddLurkerButton_Click);
-            // 
-            // AddLurkerTextBox
-            // 
-            this.AddLurkerTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddLurkerTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddLurkerTextBox.Location = new System.Drawing.Point(6, 389);
-            this.AddLurkerTextBox.Name = "AddLurkerTextBox";
-            this.AddLurkerTextBox.Size = new System.Drawing.Size(130, 26);
-            this.AddLurkerTextBox.TabIndex = 46;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 248);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 19);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "Lurker List";
-            // 
-            // LurkList
-            // 
-            this.LurkList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LurkList.FormattingEnabled = true;
-            this.LurkList.ItemHeight = 19;
-            this.LurkList.Location = new System.Drawing.Point(6, 270);
-            this.LurkList.Name = "LurkList";
-            this.LurkList.Size = new System.Drawing.Size(194, 118);
-            this.LurkList.TabIndex = 44;
-            // 
-            // SettingsLabel
-            // 
-            this.SettingsLabel.AutoSize = true;
-            this.SettingsLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsLabel.Location = new System.Drawing.Point(203, 5);
-            this.SettingsLabel.Name = "SettingsLabel";
-            this.SettingsLabel.Size = new System.Drawing.Size(56, 19);
-            this.SettingsLabel.TabIndex = 34;
-            this.SettingsLabel.Text = "Settings";
-            // 
-            // AddModTextBox
-            // 
-            this.AddModTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddModTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddModTextBox.Location = new System.Drawing.Point(6, 219);
-            this.AddModTextBox.Name = "AddModTextBox";
-            this.AddModTextBox.Size = new System.Drawing.Size(130, 26);
-            this.AddModTextBox.TabIndex = 33;
-            // 
-            // DeleteModButton
-            // 
-            this.DeleteModButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.DeleteModButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteModButton.Location = new System.Drawing.Point(174, 219);
-            this.DeleteModButton.Name = "DeleteModButton";
-            this.DeleteModButton.Size = new System.Drawing.Size(26, 26);
-            this.DeleteModButton.TabIndex = 32;
-            this.DeleteModButton.Text = "-";
-            this.DeleteModButton.UseVisualStyleBackColor = true;
-            this.DeleteModButton.Click += new System.EventHandler(this.DeleteModButton_Click);
-            // 
-            // TwitchChatModeratorsLabel
-            // 
-            this.TwitchChatModeratorsLabel.AutoSize = true;
-            this.TwitchChatModeratorsLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TwitchChatModeratorsLabel.Location = new System.Drawing.Point(2, 2);
-            this.TwitchChatModeratorsLabel.Name = "TwitchChatModeratorsLabel";
-            this.TwitchChatModeratorsLabel.Size = new System.Drawing.Size(101, 19);
-            this.TwitchChatModeratorsLabel.TabIndex = 31;
-            this.TwitchChatModeratorsLabel.Text = "Moderator List";
-            // 
-            // AddModButton
-            // 
-            this.AddModButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddModButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddModButton.Location = new System.Drawing.Point(142, 219);
-            this.AddModButton.Name = "AddModButton";
-            this.AddModButton.Size = new System.Drawing.Size(26, 26);
-            this.AddModButton.TabIndex = 30;
-            this.AddModButton.Text = "+";
-            this.AddModButton.UseVisualStyleBackColor = true;
-            this.AddModButton.Click += new System.EventHandler(this.AddModButton_Click);
-            // 
-            // ModList
-            // 
-            this.ModList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModList.FormattingEnabled = true;
-            this.ModList.ItemHeight = 19;
-            this.ModList.Location = new System.Drawing.Point(6, 24);
-            this.ModList.Name = "ModList";
-            this.ModList.Size = new System.Drawing.Size(194, 194);
-            this.ModList.TabIndex = 29;
-            // 
-            // ControlsSubPanel1
-            // 
-            this.ControlsSubPanel1.Controls.Add(this.checkBox7);
-            this.ControlsSubPanel1.Controls.Add(this.textBox14);
-            this.ControlsSubPanel1.Controls.Add(this.checkBox6);
-            this.ControlsSubPanel1.Controls.Add(this.label24);
-            this.ControlsSubPanel1.Controls.Add(this.UseMultipleCommandsPerLineLabel);
-            this.ControlsSubPanel1.Controls.Add(this.UseMultipleCommandsSeparator);
-            this.ControlsSubPanel1.Controls.Add(this.AllowOverlappingTriggers);
-            this.ControlsSubPanel1.Controls.Add(this.AllowMultipleTriggersCheckbox);
-            this.ControlsSubPanel1.Controls.Add(this.CommandSeparatorLabel);
-            this.ControlsSubPanel1.Controls.Add(this.MultipleCommandSeparatorTextBox);
-            this.ControlsSubPanel1.Controls.Add(this.label1);
-            this.ControlsSubPanel1.Controls.Add(this.textBox1);
-            this.ControlsSubPanel1.Controls.Add(this.EnableLurkingCheckBox);
-            this.ControlsSubPanel1.Controls.Add(this.LurkingModeLabel);
-            this.ControlsSubPanel1.Location = new System.Drawing.Point(203, 30);
-            this.ControlsSubPanel1.Name = "ControlsSubPanel1";
-            this.ControlsSubPanel1.Size = new System.Drawing.Size(292, 385);
-            this.ControlsSubPanel1.TabIndex = 59;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Checked = true;
-            this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox7.Location = new System.Drawing.Point(7, 144);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(197, 17);
-            this.checkBox7.TabIndex = 60;
-            this.checkBox7.Text = "Add Press Times Of Like-Commands";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(120, 116);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(169, 26);
-            this.textBox14.TabIndex = 59;
-            this.textBox14.Text = "-";
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Checked = true;
-            this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox6.Location = new System.Drawing.Point(7, 99);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(197, 17);
-            this.checkBox6.TabIndex = 58;
-            this.checkBox6.Text = "Add Press Times Of Like-Commands";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(3, 119);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(111, 19);
-            this.label24.TabIndex = 57;
-            this.label24.Text = "Command Blend";
-            // 
-            // UseMultipleCommandsPerLineLabel
-            // 
-            this.UseMultipleCommandsPerLineLabel.AutoSize = true;
-            this.UseMultipleCommandsPerLineLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UseMultipleCommandsPerLineLabel.Location = new System.Drawing.Point(3, 3);
-            this.UseMultipleCommandsPerLineLabel.Name = "UseMultipleCommandsPerLineLabel";
-            this.UseMultipleCommandsPerLineLabel.Size = new System.Drawing.Size(214, 19);
-            this.UseMultipleCommandsPerLineLabel.TabIndex = 35;
-            this.UseMultipleCommandsPerLineLabel.Text = "Use Multiple Commands Per Line";
-            // 
-            // UseMultipleCommandsSeparator
-            // 
-            this.UseMultipleCommandsSeparator.AutoSize = true;
-            this.UseMultipleCommandsSeparator.Checked = true;
-            this.UseMultipleCommandsSeparator.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UseMultipleCommandsSeparator.Location = new System.Drawing.Point(7, 25);
-            this.UseMultipleCommandsSeparator.Name = "UseMultipleCommandsSeparator";
-            this.UseMultipleCommandsSeparator.Size = new System.Drawing.Size(181, 17);
-            this.UseMultipleCommandsSeparator.TabIndex = 27;
-            this.UseMultipleCommandsSeparator.Text = "Use Multiple Commands Per Line";
-            this.UseMultipleCommandsSeparator.UseVisualStyleBackColor = true;
-            // 
-            // CommandSeparatorLabel
-            // 
-            this.CommandSeparatorLabel.AutoSize = true;
-            this.CommandSeparatorLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CommandSeparatorLabel.Location = new System.Drawing.Point(3, 45);
-            this.CommandSeparatorLabel.Name = "CommandSeparatorLabel";
-            this.CommandSeparatorLabel.Size = new System.Drawing.Size(136, 19);
-            this.CommandSeparatorLabel.TabIndex = 36;
-            this.CommandSeparatorLabel.Text = "Command Separator";
-            // 
-            // MultipleCommandSeparatorTextBox
-            // 
-            this.MultipleCommandSeparatorTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MultipleCommandSeparatorTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MultipleCommandSeparatorTextBox.Location = new System.Drawing.Point(139, 42);
-            this.MultipleCommandSeparatorTextBox.Name = "MultipleCommandSeparatorTextBox";
-            this.MultipleCommandSeparatorTextBox.Size = new System.Drawing.Size(150, 26);
-            this.MultipleCommandSeparatorTextBox.TabIndex = 26;
-            this.MultipleCommandSeparatorTextBox.Text = " ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 19);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Command Additive";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(129, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 26);
-            this.textBox1.TabIndex = 43;
-            this.textBox1.Text = "+";
-            // 
-            // LurkingModeLabel
-            // 
-            this.LurkingModeLabel.AutoSize = true;
-            this.LurkingModeLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LurkingModeLabel.Location = new System.Drawing.Point(3, 162);
-            this.LurkingModeLabel.Name = "LurkingModeLabel";
-            this.LurkingModeLabel.Size = new System.Drawing.Size(96, 19);
-            this.LurkingModeLabel.TabIndex = 49;
-            this.LurkingModeLabel.Text = "Lurking Mode";
-            // 
-            // RafflesSubPanel1
-            // 
-            this.RafflesSubPanel1.Controls.Add(this.label27);
-            this.RafflesSubPanel1.Controls.Add(this.checkBox10);
-            this.RafflesSubPanel1.Controls.Add(this.label29);
-            this.RafflesSubPanel1.Controls.Add(this.textBox19);
-            this.RafflesSubPanel1.Location = new System.Drawing.Point(203, 30);
-            this.RafflesSubPanel1.Name = "RafflesSubPanel1";
-            this.RafflesSubPanel1.Size = new System.Drawing.Size(292, 385);
-            this.RafflesSubPanel1.TabIndex = 62;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(3, 3);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(65, 19);
-            this.label27.TabIndex = 35;
-            this.label27.Text = "Currency";
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Checked = true;
-            this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox10.Location = new System.Drawing.Point(74, 6);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(167, 17);
-            this.checkBox10.TabIndex = 27;
-            this.checkBox10.Text = "Use Twitch Channel Currency";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(3, 26);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(106, 19);
-            this.label29.TabIndex = 36;
-            this.label29.Text = "Currency Name";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(114, 23);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(175, 26);
-            this.textBox19.TabIndex = 26;
-            this.textBox19.Text = "Rupees";
-            // 
-            // MacrosSubPanel1
-            // 
-            this.MacrosSubPanel1.Controls.Add(this.checkBox5);
-            this.MacrosSubPanel1.Controls.Add(this.checkBox4);
-            this.MacrosSubPanel1.Controls.Add(this.label23);
-            this.MacrosSubPanel1.Controls.Add(this.textBox13);
-            this.MacrosSubPanel1.Controls.Add(this.label22);
-            this.MacrosSubPanel1.Controls.Add(this.textBox12);
-            this.MacrosSubPanel1.Controls.Add(this.label21);
-            this.MacrosSubPanel1.Controls.Add(this.textBox11);
-            this.MacrosSubPanel1.Controls.Add(this.label20);
-            this.MacrosSubPanel1.Controls.Add(this.textBox10);
-            this.MacrosSubPanel1.Controls.Add(this.label19);
-            this.MacrosSubPanel1.Controls.Add(this.textBox8);
-            this.MacrosSubPanel1.Controls.Add(this.label14);
-            this.MacrosSubPanel1.Controls.Add(this.checkBox1);
-            this.MacrosSubPanel1.Location = new System.Drawing.Point(203, 30);
-            this.MacrosSubPanel1.Name = "MacrosSubPanel1";
-            this.MacrosSubPanel1.Size = new System.Drawing.Size(292, 385);
-            this.MacrosSubPanel1.TabIndex = 60;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(188, 25);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(71, 17);
-            this.checkBox5.TabIndex = 49;
-            this.checkBox5.Text = "Mod-Only";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Checked = true;
-            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.Location = new System.Drawing.Point(89, 156);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(71, 17);
-            this.checkBox4.TabIndex = 48;
-            this.checkBox4.Text = "Mod-Only";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(1, 154);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 19);
-            this.label23.TabIndex = 47;
-            this.label23.Text = "Delete Prefix";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(164, 150);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(123, 26);
-            this.textBox13.TabIndex = 46;
-            this.textBox13.Text = " d#";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1, 126);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(90, 19);
-            this.label22.TabIndex = 45;
-            this.label22.Text = "Search Prefix";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(94, 123);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(193, 26);
-            this.textBox12.TabIndex = 44;
-            this.textBox12.Text = " s#";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1, 99);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(97, 19);
-            this.label21.TabIndex = 43;
-            this.label21.Text = "Preview Prefix";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(104, 96);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(183, 26);
-            this.textBox11.TabIndex = 42;
-            this.textBox11.Text = " p#";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1, 72);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(117, 19);
-            this.label20.TabIndex = 41;
-            this.label20.Text = "Information Prefix";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(124, 69);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(163, 26);
-            this.textBox10.TabIndex = 40;
-            this.textBox10.Text = " i#";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1, 45);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(127, 19);
-            this.label19.TabIndex = 39;
-            this.label19.Text = "Create / Play Prefix";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(137, 42);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 26);
-            this.textBox8.TabIndex = 38;
-            this.textBox8.Text = " #";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 3);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(201, 19);
-            this.label14.TabIndex = 37;
-            this.label14.Text = "Enable User Generated Macros";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(7, 25);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(175, 17);
-            this.checkBox1.TabIndex = 36;
-            this.checkBox1.Text = "Enable User Generated Macros";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // RemindersSubPanel1
-            // 
-            this.RemindersSubPanel1.Controls.Add(this.label25);
-            this.RemindersSubPanel1.Controls.Add(this.ReminderActivityTimer);
-            this.RemindersSubPanel1.Location = new System.Drawing.Point(203, 30);
-            this.RemindersSubPanel1.Name = "RemindersSubPanel1";
-            this.RemindersSubPanel1.Size = new System.Drawing.Size(292, 385);
-            this.RemindersSubPanel1.TabIndex = 61;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(3, 3);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(93, 19);
-            this.label25.TabIndex = 37;
-            this.label25.Text = "Activity Timer";
-            // 
-            // SettingsSubPanel1
-            // 
-            this.SettingsSubPanel1.Controls.Add(this.label35);
-            this.SettingsSubPanel1.Controls.Add(this.ReconnectDelayTimeBox);
-            this.SettingsSubPanel1.Controls.Add(this.label5);
-            this.SettingsSubPanel1.Controls.Add(this.InputUpDownDelay);
-            this.SettingsSubPanel1.Controls.Add(this.label7);
-            this.SettingsSubPanel1.Controls.Add(this.AutoReconnectCheckBox);
-            this.SettingsSubPanel1.Controls.Add(this.ReconnectTimeBox);
-            this.SettingsSubPanel1.Location = new System.Drawing.Point(203, 30);
-            this.SettingsSubPanel1.Name = "SettingsSubPanel1";
-            this.SettingsSubPanel1.Size = new System.Drawing.Size(292, 385);
-            this.SettingsSubPanel1.TabIndex = 58;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(120, 92);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(115, 19);
-            this.label35.TabIndex = 43;
-            this.label35.Text = "Reconnect Delay:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 19);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Application-to-Application Delay";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 19);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Auto Reconnect";
             // 
             // ControlPanel1
             // 
@@ -1176,30 +600,749 @@
             this.MasterControlList.TabIndex = 22;
             this.MasterControlList.SelectedIndexChanged += new System.EventHandler(this.MasterControlList_SelectedIndexChanged);
             // 
-            // WindowListPanel1
+            // RemindersPanel1
             // 
-            this.WindowListPanel1.Controls.Add(this.ActiveWindowsBox);
-            this.WindowListPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WindowListPanel1.Location = new System.Drawing.Point(0, 27);
-            this.WindowListPanel1.Name = "WindowListPanel1";
-            this.WindowListPanel1.Size = new System.Drawing.Size(498, 417);
-            this.WindowListPanel1.TabIndex = 19;
-            this.WindowListPanel1.Visible = false;
+            this.RemindersPanel1.Controls.Add(this.label3);
+            this.RemindersPanel1.Controls.Add(this.label11);
+            this.RemindersPanel1.Controls.Add(this.label12);
+            this.RemindersPanel1.Controls.Add(this.label13);
+            this.RemindersPanel1.Controls.Add(this.ReminderTypeBox);
+            this.RemindersPanel1.Controls.Add(this.ReminderTimerBox);
+            this.RemindersPanel1.Controls.Add(this.ReminderNameBox);
+            this.RemindersPanel1.Controls.Add(this.RemoveReminderButton);
+            this.RemindersPanel1.Controls.Add(this.AddReminderButton);
+            this.RemindersPanel1.Controls.Add(this.ReminderTextBox);
+            this.RemindersPanel1.Controls.Add(this.RemindersListBox);
+            this.RemindersPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RemindersPanel1.Location = new System.Drawing.Point(0, 27);
+            this.RemindersPanel1.Name = "RemindersPanel1";
+            this.RemindersPanel1.Size = new System.Drawing.Size(498, 417);
+            this.RemindersPanel1.TabIndex = 40;
             // 
-            // ActiveWindowsBox
+            // label3
             // 
-            this.ActiveWindowsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(304, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 19);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Reminder Timer:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(304, 161);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 19);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "Reminder:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(304, 59);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(104, 19);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "Reminder Type:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(304, 8);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(111, 19);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "Reminder Name:";
+            // 
+            // ReminderTypeBox
+            // 
+            this.ReminderTypeBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ActiveWindowsBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActiveWindowsBox.FormattingEnabled = true;
-            this.ActiveWindowsBox.ItemHeight = 19;
-            this.ActiveWindowsBox.Location = new System.Drawing.Point(15, 14);
-            this.ActiveWindowsBox.Name = "ActiveWindowsBox";
-            this.ActiveWindowsBox.ScrollAlwaysVisible = true;
-            this.ActiveWindowsBox.Size = new System.Drawing.Size(467, 384);
-            this.ActiveWindowsBox.TabIndex = 0;
-            this.ActiveWindowsBox.SelectedIndexChanged += new System.EventHandler(this.ActiveWindowsBox_SelectedIndexChanged);
+            this.ReminderTypeBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderTypeBox.FormattingEnabled = true;
+            this.ReminderTypeBox.Items.AddRange(new object[] {
+            "Trigger",
+            "Timer",
+            "Active Timer",
+            "Inactive Timer"});
+            this.ReminderTypeBox.Location = new System.Drawing.Point(308, 81);
+            this.ReminderTypeBox.Name = "ReminderTypeBox";
+            this.ReminderTypeBox.Size = new System.Drawing.Size(183, 27);
+            this.ReminderTypeBox.TabIndex = 31;
+            this.ReminderTypeBox.Text = "Trigger";
+            this.ReminderTypeBox.SelectedIndexChanged += new System.EventHandler(this.ReminderTypeBox_SelectedIndexChanged);
+            // 
+            // ReminderTimerBox
+            // 
+            this.ReminderTimerBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReminderTimerBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderTimerBox.Location = new System.Drawing.Point(308, 133);
+            this.ReminderTimerBox.Maximum = new decimal(new int[] {
+            -1530494977,
+            232830,
+            0,
+            0});
+            this.ReminderTimerBox.Name = "ReminderTimerBox";
+            this.ReminderTimerBox.Size = new System.Drawing.Size(183, 26);
+            this.ReminderTimerBox.TabIndex = 30;
+            this.ReminderTimerBox.Value = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.ReminderTimerBox.ValueChanged += new System.EventHandler(this.ReminderTimerBox_ValueChanged);
+            // 
+            // ReminderNameBox
+            // 
+            this.ReminderNameBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReminderNameBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderNameBox.Location = new System.Drawing.Point(308, 30);
+            this.ReminderNameBox.Name = "ReminderNameBox";
+            this.ReminderNameBox.Size = new System.Drawing.Size(183, 26);
+            this.ReminderNameBox.TabIndex = 29;
+            this.ReminderNameBox.Text = "Discord";
+            this.ReminderNameBox.TextChanged += new System.EventHandler(this.ReminderNameBox_TextChanged);
+            // 
+            // RemoveReminderButton
+            // 
+            this.RemoveReminderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.RemoveReminderButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveReminderButton.Location = new System.Drawing.Point(158, 382);
+            this.RemoveReminderButton.Name = "RemoveReminderButton";
+            this.RemoveReminderButton.Size = new System.Drawing.Size(144, 32);
+            this.RemoveReminderButton.TabIndex = 27;
+            this.RemoveReminderButton.Text = "-";
+            this.RemoveReminderButton.UseVisualStyleBackColor = true;
+            this.RemoveReminderButton.Click += new System.EventHandler(this.RemoveReminderButton_Click);
+            // 
+            // AddReminderButton
+            // 
+            this.AddReminderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AddReminderButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddReminderButton.Location = new System.Drawing.Point(8, 382);
+            this.AddReminderButton.Name = "AddReminderButton";
+            this.AddReminderButton.Size = new System.Drawing.Size(144, 32);
+            this.AddReminderButton.TabIndex = 26;
+            this.AddReminderButton.Text = "+";
+            this.AddReminderButton.UseVisualStyleBackColor = true;
+            this.AddReminderButton.Click += new System.EventHandler(this.AddReminderButton_Click);
+            // 
+            // ReminderTextBox
+            // 
+            this.ReminderTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReminderTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReminderTextBox.Location = new System.Drawing.Point(308, 182);
+            this.ReminderTextBox.Multiline = true;
+            this.ReminderTextBox.Name = "ReminderTextBox";
+            this.ReminderTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ReminderTextBox.Size = new System.Drawing.Size(183, 229);
+            this.ReminderTextBox.TabIndex = 25;
+            this.ReminderTextBox.Text = "A";
+            this.ReminderTextBox.TextChanged += new System.EventHandler(this.ReminderTextBox_TextChanged);
+            // 
+            // RemindersListBox
+            // 
+            this.RemindersListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.RemindersListBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemindersListBox.FormattingEnabled = true;
+            this.RemindersListBox.ItemHeight = 19;
+            this.RemindersListBox.Items.AddRange(new object[] {
+            "Discord Reminder|Trigger|600|Just wanted to remind you guys about our discord! ht" +
+                "tps://discord.gg/dUB7E9UrMS"});
+            this.RemindersListBox.Location = new System.Drawing.Point(8, 8);
+            this.RemindersListBox.Name = "RemindersListBox";
+            this.RemindersListBox.Size = new System.Drawing.Size(294, 365);
+            this.RemindersListBox.TabIndex = 22;
+            this.RemindersListBox.SelectedIndexChanged += new System.EventHandler(this.RemindersListBox_SelectedIndexChanged);
+            // 
+            // SettingsPanel1
+            // 
+            this.SettingsPanel1.Controls.Add(this.ControlsSubPanel1);
+            this.SettingsPanel1.Controls.Add(this.SettingsSubPanel1);
+            this.SettingsPanel1.Controls.Add(this.SettingsComboBox);
+            this.SettingsPanel1.Controls.Add(this.DeleteLurkerButton);
+            this.SettingsPanel1.Controls.Add(this.AddLurkerButton);
+            this.SettingsPanel1.Controls.Add(this.AddLurkerTextBox);
+            this.SettingsPanel1.Controls.Add(this.label2);
+            this.SettingsPanel1.Controls.Add(this.LurkList);
+            this.SettingsPanel1.Controls.Add(this.SettingsLabel);
+            this.SettingsPanel1.Controls.Add(this.AddModTextBox);
+            this.SettingsPanel1.Controls.Add(this.DeleteModButton);
+            this.SettingsPanel1.Controls.Add(this.TwitchChatModeratorsLabel);
+            this.SettingsPanel1.Controls.Add(this.AddModButton);
+            this.SettingsPanel1.Controls.Add(this.ModList);
+            this.SettingsPanel1.Controls.Add(this.RafflesSubPanel1);
+            this.SettingsPanel1.Controls.Add(this.MacrosSubPanel1);
+            this.SettingsPanel1.Controls.Add(this.RemindersSubPanel1);
+            this.SettingsPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SettingsPanel1.Location = new System.Drawing.Point(0, 27);
+            this.SettingsPanel1.Name = "SettingsPanel1";
+            this.SettingsPanel1.Size = new System.Drawing.Size(498, 417);
+            this.SettingsPanel1.TabIndex = 20;
+            this.SettingsPanel1.Visible = false;
+            // 
+            // ControlsSubPanel1
+            // 
+            this.ControlsSubPanel1.Controls.Add(this.checkBox7);
+            this.ControlsSubPanel1.Controls.Add(this.textBox14);
+            this.ControlsSubPanel1.Controls.Add(this.checkBox6);
+            this.ControlsSubPanel1.Controls.Add(this.label24);
+            this.ControlsSubPanel1.Controls.Add(this.UseMultipleCommandsPerLineLabel);
+            this.ControlsSubPanel1.Controls.Add(this.UseMultipleCommandsSeparator);
+            this.ControlsSubPanel1.Controls.Add(this.AllowOverlappingTriggers);
+            this.ControlsSubPanel1.Controls.Add(this.AllowMultipleTriggersCheckbox);
+            this.ControlsSubPanel1.Controls.Add(this.CommandSeparatorLabel);
+            this.ControlsSubPanel1.Controls.Add(this.MultipleCommandSeparatorTextBox);
+            this.ControlsSubPanel1.Controls.Add(this.label1);
+            this.ControlsSubPanel1.Controls.Add(this.textBox1);
+            this.ControlsSubPanel1.Controls.Add(this.EnableLurkingCheckBox);
+            this.ControlsSubPanel1.Controls.Add(this.LurkingModeLabel);
+            this.ControlsSubPanel1.Location = new System.Drawing.Point(203, 30);
+            this.ControlsSubPanel1.Name = "ControlsSubPanel1";
+            this.ControlsSubPanel1.Size = new System.Drawing.Size(292, 385);
+            this.ControlsSubPanel1.TabIndex = 59;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Checked = true;
+            this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox7.Location = new System.Drawing.Point(7, 144);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(197, 17);
+            this.checkBox7.TabIndex = 60;
+            this.checkBox7.Text = "Add Press Times Of Like-Commands";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(120, 116);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(169, 26);
+            this.textBox14.TabIndex = 59;
+            this.textBox14.Text = "-";
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Checked = true;
+            this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox6.Location = new System.Drawing.Point(7, 99);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(197, 17);
+            this.checkBox6.TabIndex = 58;
+            this.checkBox6.Text = "Add Press Times Of Like-Commands";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(3, 119);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(111, 19);
+            this.label24.TabIndex = 57;
+            this.label24.Text = "Command Blend";
+            // 
+            // UseMultipleCommandsPerLineLabel
+            // 
+            this.UseMultipleCommandsPerLineLabel.AutoSize = true;
+            this.UseMultipleCommandsPerLineLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UseMultipleCommandsPerLineLabel.Location = new System.Drawing.Point(3, 3);
+            this.UseMultipleCommandsPerLineLabel.Name = "UseMultipleCommandsPerLineLabel";
+            this.UseMultipleCommandsPerLineLabel.Size = new System.Drawing.Size(214, 19);
+            this.UseMultipleCommandsPerLineLabel.TabIndex = 35;
+            this.UseMultipleCommandsPerLineLabel.Text = "Use Multiple Commands Per Line";
+            // 
+            // UseMultipleCommandsSeparator
+            // 
+            this.UseMultipleCommandsSeparator.AutoSize = true;
+            this.UseMultipleCommandsSeparator.Checked = true;
+            this.UseMultipleCommandsSeparator.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.UseMultipleCommandsSeparator.Location = new System.Drawing.Point(7, 25);
+            this.UseMultipleCommandsSeparator.Name = "UseMultipleCommandsSeparator";
+            this.UseMultipleCommandsSeparator.Size = new System.Drawing.Size(181, 17);
+            this.UseMultipleCommandsSeparator.TabIndex = 27;
+            this.UseMultipleCommandsSeparator.Text = "Use Multiple Commands Per Line";
+            this.UseMultipleCommandsSeparator.UseVisualStyleBackColor = true;
+            // 
+            // CommandSeparatorLabel
+            // 
+            this.CommandSeparatorLabel.AutoSize = true;
+            this.CommandSeparatorLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CommandSeparatorLabel.Location = new System.Drawing.Point(3, 45);
+            this.CommandSeparatorLabel.Name = "CommandSeparatorLabel";
+            this.CommandSeparatorLabel.Size = new System.Drawing.Size(136, 19);
+            this.CommandSeparatorLabel.TabIndex = 36;
+            this.CommandSeparatorLabel.Text = "Command Separator";
+            // 
+            // MultipleCommandSeparatorTextBox
+            // 
+            this.MultipleCommandSeparatorTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MultipleCommandSeparatorTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MultipleCommandSeparatorTextBox.Location = new System.Drawing.Point(139, 42);
+            this.MultipleCommandSeparatorTextBox.Name = "MultipleCommandSeparatorTextBox";
+            this.MultipleCommandSeparatorTextBox.Size = new System.Drawing.Size(150, 26);
+            this.MultipleCommandSeparatorTextBox.TabIndex = 26;
+            this.MultipleCommandSeparatorTextBox.Text = " ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 19);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Command Additive";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(129, 71);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(160, 26);
+            this.textBox1.TabIndex = 43;
+            this.textBox1.Text = "+";
+            // 
+            // LurkingModeLabel
+            // 
+            this.LurkingModeLabel.AutoSize = true;
+            this.LurkingModeLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LurkingModeLabel.Location = new System.Drawing.Point(3, 162);
+            this.LurkingModeLabel.Name = "LurkingModeLabel";
+            this.LurkingModeLabel.Size = new System.Drawing.Size(96, 19);
+            this.LurkingModeLabel.TabIndex = 49;
+            this.LurkingModeLabel.Text = "Lurking Mode";
+            // 
+            // SettingsSubPanel1
+            // 
+            this.SettingsSubPanel1.Controls.Add(this.label35);
+            this.SettingsSubPanel1.Controls.Add(this.ReconnectDelayTimeBox);
+            this.SettingsSubPanel1.Controls.Add(this.label5);
+            this.SettingsSubPanel1.Controls.Add(this.InputUpDownDelay);
+            this.SettingsSubPanel1.Controls.Add(this.label7);
+            this.SettingsSubPanel1.Controls.Add(this.AutoReconnectCheckBox);
+            this.SettingsSubPanel1.Controls.Add(this.ReconnectTimeBox);
+            this.SettingsSubPanel1.Location = new System.Drawing.Point(203, 30);
+            this.SettingsSubPanel1.Name = "SettingsSubPanel1";
+            this.SettingsSubPanel1.Size = new System.Drawing.Size(292, 385);
+            this.SettingsSubPanel1.TabIndex = 58;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(120, 92);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(115, 19);
+            this.label35.TabIndex = 43;
+            this.label35.Text = "Reconnect Delay:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(210, 19);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Application-to-Application Delay";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 19);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Auto Reconnect";
+            // 
+            // SettingsComboBox
+            // 
+            this.SettingsComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SettingsComboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsComboBox.FormattingEnabled = true;
+            this.SettingsComboBox.ItemHeight = 19;
+            this.SettingsComboBox.Items.AddRange(new object[] {
+            "Behavior",
+            "Controls",
+            "Macros",
+            "Reminders",
+            "Raffles"});
+            this.SettingsComboBox.Location = new System.Drawing.Point(265, 2);
+            this.SettingsComboBox.Name = "SettingsComboBox";
+            this.SettingsComboBox.Size = new System.Drawing.Size(229, 27);
+            this.SettingsComboBox.TabIndex = 57;
+            this.SettingsComboBox.Text = "Controls";
+            this.SettingsComboBox.SelectedIndexChanged += new System.EventHandler(this.SettingsComboBox_SelectedIndexChanged);
+            // 
+            // DeleteLurkerButton
+            // 
+            this.DeleteLurkerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DeleteLurkerButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteLurkerButton.Location = new System.Drawing.Point(174, 389);
+            this.DeleteLurkerButton.Name = "DeleteLurkerButton";
+            this.DeleteLurkerButton.Size = new System.Drawing.Size(26, 26);
+            this.DeleteLurkerButton.TabIndex = 48;
+            this.DeleteLurkerButton.Text = "-";
+            this.DeleteLurkerButton.UseVisualStyleBackColor = true;
+            this.DeleteLurkerButton.Click += new System.EventHandler(this.DeleteLurkerButton_Click);
+            // 
+            // AddLurkerButton
+            // 
+            this.AddLurkerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddLurkerButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddLurkerButton.Location = new System.Drawing.Point(142, 389);
+            this.AddLurkerButton.Name = "AddLurkerButton";
+            this.AddLurkerButton.Size = new System.Drawing.Size(26, 26);
+            this.AddLurkerButton.TabIndex = 47;
+            this.AddLurkerButton.Text = "+";
+            this.AddLurkerButton.UseVisualStyleBackColor = true;
+            this.AddLurkerButton.Click += new System.EventHandler(this.AddLurkerButton_Click);
+            // 
+            // AddLurkerTextBox
+            // 
+            this.AddLurkerTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddLurkerTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddLurkerTextBox.Location = new System.Drawing.Point(6, 389);
+            this.AddLurkerTextBox.Name = "AddLurkerTextBox";
+            this.AddLurkerTextBox.Size = new System.Drawing.Size(130, 26);
+            this.AddLurkerTextBox.TabIndex = 46;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 19);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Lurker List";
+            // 
+            // LurkList
+            // 
+            this.LurkList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LurkList.FormattingEnabled = true;
+            this.LurkList.ItemHeight = 19;
+            this.LurkList.Location = new System.Drawing.Point(6, 270);
+            this.LurkList.Name = "LurkList";
+            this.LurkList.Size = new System.Drawing.Size(194, 118);
+            this.LurkList.TabIndex = 44;
+            // 
+            // SettingsLabel
+            // 
+            this.SettingsLabel.AutoSize = true;
+            this.SettingsLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsLabel.Location = new System.Drawing.Point(203, 5);
+            this.SettingsLabel.Name = "SettingsLabel";
+            this.SettingsLabel.Size = new System.Drawing.Size(56, 19);
+            this.SettingsLabel.TabIndex = 34;
+            this.SettingsLabel.Text = "Settings";
+            // 
+            // AddModTextBox
+            // 
+            this.AddModTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddModTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddModTextBox.Location = new System.Drawing.Point(6, 219);
+            this.AddModTextBox.Name = "AddModTextBox";
+            this.AddModTextBox.Size = new System.Drawing.Size(130, 26);
+            this.AddModTextBox.TabIndex = 33;
+            // 
+            // DeleteModButton
+            // 
+            this.DeleteModButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.DeleteModButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteModButton.Location = new System.Drawing.Point(174, 219);
+            this.DeleteModButton.Name = "DeleteModButton";
+            this.DeleteModButton.Size = new System.Drawing.Size(26, 26);
+            this.DeleteModButton.TabIndex = 32;
+            this.DeleteModButton.Text = "-";
+            this.DeleteModButton.UseVisualStyleBackColor = true;
+            this.DeleteModButton.Click += new System.EventHandler(this.DeleteModButton_Click);
+            // 
+            // TwitchChatModeratorsLabel
+            // 
+            this.TwitchChatModeratorsLabel.AutoSize = true;
+            this.TwitchChatModeratorsLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwitchChatModeratorsLabel.Location = new System.Drawing.Point(2, 2);
+            this.TwitchChatModeratorsLabel.Name = "TwitchChatModeratorsLabel";
+            this.TwitchChatModeratorsLabel.Size = new System.Drawing.Size(101, 19);
+            this.TwitchChatModeratorsLabel.TabIndex = 31;
+            this.TwitchChatModeratorsLabel.Text = "Moderator List";
+            // 
+            // AddModButton
+            // 
+            this.AddModButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddModButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddModButton.Location = new System.Drawing.Point(142, 219);
+            this.AddModButton.Name = "AddModButton";
+            this.AddModButton.Size = new System.Drawing.Size(26, 26);
+            this.AddModButton.TabIndex = 30;
+            this.AddModButton.Text = "+";
+            this.AddModButton.UseVisualStyleBackColor = true;
+            this.AddModButton.Click += new System.EventHandler(this.AddModButton_Click);
+            // 
+            // ModList
+            // 
+            this.ModList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModList.FormattingEnabled = true;
+            this.ModList.ItemHeight = 19;
+            this.ModList.Location = new System.Drawing.Point(6, 24);
+            this.ModList.Name = "ModList";
+            this.ModList.Size = new System.Drawing.Size(194, 194);
+            this.ModList.TabIndex = 29;
+            // 
+            // RafflesSubPanel1
+            // 
+            this.RafflesSubPanel1.Controls.Add(this.label27);
+            this.RafflesSubPanel1.Controls.Add(this.checkBox10);
+            this.RafflesSubPanel1.Controls.Add(this.label29);
+            this.RafflesSubPanel1.Controls.Add(this.textBox19);
+            this.RafflesSubPanel1.Location = new System.Drawing.Point(203, 30);
+            this.RafflesSubPanel1.Name = "RafflesSubPanel1";
+            this.RafflesSubPanel1.Size = new System.Drawing.Size(292, 385);
+            this.RafflesSubPanel1.TabIndex = 62;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(3, 3);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(65, 19);
+            this.label27.TabIndex = 35;
+            this.label27.Text = "Currency";
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Checked = true;
+            this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox10.Location = new System.Drawing.Point(74, 6);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(167, 17);
+            this.checkBox10.TabIndex = 27;
+            this.checkBox10.Text = "Use Twitch Channel Currency";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(3, 26);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(106, 19);
+            this.label29.TabIndex = 36;
+            this.label29.Text = "Currency Name";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox19.Location = new System.Drawing.Point(114, 23);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(175, 26);
+            this.textBox19.TabIndex = 26;
+            this.textBox19.Text = "Rupees";
+            // 
+            // MacrosSubPanel1
+            // 
+            this.MacrosSubPanel1.Controls.Add(this.checkBox5);
+            this.MacrosSubPanel1.Controls.Add(this.checkBox4);
+            this.MacrosSubPanel1.Controls.Add(this.label23);
+            this.MacrosSubPanel1.Controls.Add(this.textBox13);
+            this.MacrosSubPanel1.Controls.Add(this.label22);
+            this.MacrosSubPanel1.Controls.Add(this.textBox12);
+            this.MacrosSubPanel1.Controls.Add(this.label21);
+            this.MacrosSubPanel1.Controls.Add(this.textBox11);
+            this.MacrosSubPanel1.Controls.Add(this.label20);
+            this.MacrosSubPanel1.Controls.Add(this.textBox10);
+            this.MacrosSubPanel1.Controls.Add(this.label19);
+            this.MacrosSubPanel1.Controls.Add(this.textBox8);
+            this.MacrosSubPanel1.Controls.Add(this.label14);
+            this.MacrosSubPanel1.Controls.Add(this.checkBox1);
+            this.MacrosSubPanel1.Location = new System.Drawing.Point(203, 30);
+            this.MacrosSubPanel1.Name = "MacrosSubPanel1";
+            this.MacrosSubPanel1.Size = new System.Drawing.Size(292, 385);
+            this.MacrosSubPanel1.TabIndex = 60;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(188, 25);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(71, 17);
+            this.checkBox5.TabIndex = 49;
+            this.checkBox5.Text = "Mod-Only";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Checked = true;
+            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox4.Location = new System.Drawing.Point(89, 156);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(71, 17);
+            this.checkBox4.TabIndex = 48;
+            this.checkBox4.Text = "Mod-Only";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(1, 154);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(87, 19);
+            this.label23.TabIndex = 47;
+            this.label23.Text = "Delete Prefix";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(164, 150);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(123, 26);
+            this.textBox13.TabIndex = 46;
+            this.textBox13.Text = " d#";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(1, 126);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(90, 19);
+            this.label22.TabIndex = 45;
+            this.label22.Text = "Search Prefix";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(94, 123);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(193, 26);
+            this.textBox12.TabIndex = 44;
+            this.textBox12.Text = " s#";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(1, 99);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(97, 19);
+            this.label21.TabIndex = 43;
+            this.label21.Text = "Preview Prefix";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(104, 96);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(183, 26);
+            this.textBox11.TabIndex = 42;
+            this.textBox11.Text = " p#";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(1, 72);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(117, 19);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "Information Prefix";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(124, 69);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(163, 26);
+            this.textBox10.TabIndex = 40;
+            this.textBox10.Text = " i#";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(1, 45);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(127, 19);
+            this.label19.TabIndex = 39;
+            this.label19.Text = "Create / Play Prefix";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(137, 42);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(150, 26);
+            this.textBox8.TabIndex = 38;
+            this.textBox8.Text = " #";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 3);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(201, 19);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "Enable User Generated Macros";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(7, 25);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(175, 17);
+            this.checkBox1.TabIndex = 36;
+            this.checkBox1.Text = "Enable User Generated Macros";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // RemindersSubPanel1
+            // 
+            this.RemindersSubPanel1.Controls.Add(this.label25);
+            this.RemindersSubPanel1.Controls.Add(this.ReminderActivityTimer);
+            this.RemindersSubPanel1.Location = new System.Drawing.Point(203, 30);
+            this.RemindersSubPanel1.Name = "RemindersSubPanel1";
+            this.RemindersSubPanel1.Size = new System.Drawing.Size(292, 385);
+            this.RemindersSubPanel1.TabIndex = 61;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(3, 3);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(93, 19);
+            this.label25.TabIndex = 37;
+            this.label25.Text = "Activity Timer";
             // 
             // RafflesPanel1
             // 
@@ -1421,6 +1564,31 @@
             this.listBox3.Size = new System.Drawing.Size(277, 365);
             this.listBox3.TabIndex = 22;
             // 
+            // WindowListPanel1
+            // 
+            this.WindowListPanel1.Controls.Add(this.ActiveWindowsBox);
+            this.WindowListPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WindowListPanel1.Location = new System.Drawing.Point(0, 27);
+            this.WindowListPanel1.Name = "WindowListPanel1";
+            this.WindowListPanel1.Size = new System.Drawing.Size(498, 417);
+            this.WindowListPanel1.TabIndex = 19;
+            this.WindowListPanel1.Visible = false;
+            // 
+            // ActiveWindowsBox
+            // 
+            this.ActiveWindowsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ActiveWindowsBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActiveWindowsBox.FormattingEnabled = true;
+            this.ActiveWindowsBox.ItemHeight = 19;
+            this.ActiveWindowsBox.Location = new System.Drawing.Point(15, 14);
+            this.ActiveWindowsBox.Name = "ActiveWindowsBox";
+            this.ActiveWindowsBox.ScrollAlwaysVisible = true;
+            this.ActiveWindowsBox.Size = new System.Drawing.Size(467, 384);
+            this.ActiveWindowsBox.TabIndex = 0;
+            this.ActiveWindowsBox.SelectedIndexChanged += new System.EventHandler(this.ActiveWindowsBox_SelectedIndexChanged);
+            // 
             // MacroPanel1
             // 
             this.MacroPanel1.Controls.Add(this.textBox3);
@@ -1551,170 +1719,6 @@
             this.listBox1.Size = new System.Drawing.Size(315, 365);
             this.listBox1.TabIndex = 22;
             // 
-            // RemindersPanel1
-            // 
-            this.RemindersPanel1.Controls.Add(this.label3);
-            this.RemindersPanel1.Controls.Add(this.label11);
-            this.RemindersPanel1.Controls.Add(this.label12);
-            this.RemindersPanel1.Controls.Add(this.label13);
-            this.RemindersPanel1.Controls.Add(this.ReminderTypeBox);
-            this.RemindersPanel1.Controls.Add(this.ReminderTimerBox);
-            this.RemindersPanel1.Controls.Add(this.ReminderNameBox);
-            this.RemindersPanel1.Controls.Add(this.RemoveReminderButton);
-            this.RemindersPanel1.Controls.Add(this.AddReminderButton);
-            this.RemindersPanel1.Controls.Add(this.ReminderTextBox);
-            this.RemindersPanel1.Controls.Add(this.RemindersListBox);
-            this.RemindersPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RemindersPanel1.Location = new System.Drawing.Point(0, 27);
-            this.RemindersPanel1.Name = "RemindersPanel1";
-            this.RemindersPanel1.Size = new System.Drawing.Size(498, 417);
-            this.RemindersPanel1.TabIndex = 40;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(304, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 19);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Reminder Timer:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(304, 161);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 19);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "Reminder:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(304, 59);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 19);
-            this.label12.TabIndex = 35;
-            this.label12.Text = "Reminder Type:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(304, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(111, 19);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Reminder Name:";
-            // 
-            // ReminderTypeBox
-            // 
-            this.ReminderTypeBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReminderTypeBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReminderTypeBox.FormattingEnabled = true;
-            this.ReminderTypeBox.Items.AddRange(new object[] {
-            "Trigger",
-            "Timer",
-            "Active Timer",
-            "Inactive Timer"});
-            this.ReminderTypeBox.Location = new System.Drawing.Point(308, 81);
-            this.ReminderTypeBox.Name = "ReminderTypeBox";
-            this.ReminderTypeBox.Size = new System.Drawing.Size(183, 27);
-            this.ReminderTypeBox.TabIndex = 31;
-            this.ReminderTypeBox.Text = "Trigger";
-            this.ReminderTypeBox.SelectedIndexChanged += new System.EventHandler(this.ReminderTypeBox_SelectedIndexChanged);
-            // 
-            // ReminderTimerBox
-            // 
-            this.ReminderTimerBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReminderTimerBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReminderTimerBox.Location = new System.Drawing.Point(308, 133);
-            this.ReminderTimerBox.Maximum = new decimal(new int[] {
-            -1530494977,
-            232830,
-            0,
-            0});
-            this.ReminderTimerBox.Name = "ReminderTimerBox";
-            this.ReminderTimerBox.Size = new System.Drawing.Size(183, 26);
-            this.ReminderTimerBox.TabIndex = 30;
-            this.ReminderTimerBox.Value = new decimal(new int[] {
-            600,
-            0,
-            0,
-            0});
-            this.ReminderTimerBox.ValueChanged += new System.EventHandler(this.ReminderTimerBox_ValueChanged);
-            // 
-            // ReminderNameBox
-            // 
-            this.ReminderNameBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReminderNameBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReminderNameBox.Location = new System.Drawing.Point(308, 30);
-            this.ReminderNameBox.Name = "ReminderNameBox";
-            this.ReminderNameBox.Size = new System.Drawing.Size(183, 26);
-            this.ReminderNameBox.TabIndex = 29;
-            this.ReminderNameBox.Text = "Discord";
-            this.ReminderNameBox.TextChanged += new System.EventHandler(this.ReminderNameBox_TextChanged);
-            // 
-            // RemoveReminderButton
-            // 
-            this.RemoveReminderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.RemoveReminderButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveReminderButton.Location = new System.Drawing.Point(158, 382);
-            this.RemoveReminderButton.Name = "RemoveReminderButton";
-            this.RemoveReminderButton.Size = new System.Drawing.Size(144, 32);
-            this.RemoveReminderButton.TabIndex = 27;
-            this.RemoveReminderButton.Text = "-";
-            this.RemoveReminderButton.UseVisualStyleBackColor = true;
-            this.RemoveReminderButton.Click += new System.EventHandler(this.RemoveReminderButton_Click);
-            // 
-            // AddReminderButton
-            // 
-            this.AddReminderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AddReminderButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddReminderButton.Location = new System.Drawing.Point(8, 382);
-            this.AddReminderButton.Name = "AddReminderButton";
-            this.AddReminderButton.Size = new System.Drawing.Size(144, 32);
-            this.AddReminderButton.TabIndex = 26;
-            this.AddReminderButton.Text = "+";
-            this.AddReminderButton.UseVisualStyleBackColor = true;
-            this.AddReminderButton.Click += new System.EventHandler(this.AddReminderButton_Click);
-            // 
-            // ReminderTextBox
-            // 
-            this.ReminderTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReminderTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReminderTextBox.Location = new System.Drawing.Point(308, 182);
-            this.ReminderTextBox.Multiline = true;
-            this.ReminderTextBox.Name = "ReminderTextBox";
-            this.ReminderTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ReminderTextBox.Size = new System.Drawing.Size(183, 229);
-            this.ReminderTextBox.TabIndex = 25;
-            this.ReminderTextBox.Text = "A";
-            this.ReminderTextBox.TextChanged += new System.EventHandler(this.ReminderTextBox_TextChanged);
-            // 
-            // RemindersListBox
-            // 
-            this.RemindersListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.RemindersListBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemindersListBox.FormattingEnabled = true;
-            this.RemindersListBox.ItemHeight = 19;
-            this.RemindersListBox.Items.AddRange(new object[] {
-            "Discord Reminder|Trigger|600|Just wanted to remind you guys about our discord! ht" +
-                "tps://discord.gg/dUB7E9UrMS"});
-            this.RemindersListBox.Location = new System.Drawing.Point(8, 8);
-            this.RemindersListBox.Name = "RemindersListBox";
-            this.RemindersListBox.Size = new System.Drawing.Size(294, 365);
-            this.RemindersListBox.TabIndex = 22;
-            this.RemindersListBox.SelectedIndexChanged += new System.EventHandler(this.RemindersListBox_SelectedIndexChanged);
-            // 
             // MainMenuStripControl
             // 
             this.MainMenuStripControl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1739,6 +1743,13 @@
             this.fileToolStripMenuItem3.Size = new System.Drawing.Size(43, 23);
             this.fileToolStripMenuItem3.Text = "File";
             // 
+            // focusGameWindowToolStripMenuItem
+            // 
+            this.focusGameWindowToolStripMenuItem.Name = "focusGameWindowToolStripMenuItem";
+            this.focusGameWindowToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.focusGameWindowToolStripMenuItem.Text = "Focus Game Window";
+            this.focusGameWindowToolStripMenuItem.Click += new System.EventHandler(this.setGameWindowToolStripMenuItem_Click);
+            // 
             // settingsToolStripMenuItem3
             // 
             this.settingsToolStripMenuItem3.Name = "settingsToolStripMenuItem3";
@@ -1756,6 +1767,20 @@
             this.controlsToolStripMenuItem3.Text = "Controls";
             this.controlsToolStripMenuItem3.Click += new System.EventHandler(this.controlsToolStripMenuItem_Click);
             // 
+            // loadControllerProfileToolStripMenuItem2
+            // 
+            this.loadControllerProfileToolStripMenuItem2.Name = "loadControllerProfileToolStripMenuItem2";
+            this.loadControllerProfileToolStripMenuItem2.Size = new System.Drawing.Size(218, 24);
+            this.loadControllerProfileToolStripMenuItem2.Text = "Load Controller Profile";
+            this.loadControllerProfileToolStripMenuItem2.Click += new System.EventHandler(this.loadControlProfileToolStripMenuItem1_Click);
+            // 
+            // saveControllerProfileToolStripMenuItem2
+            // 
+            this.saveControllerProfileToolStripMenuItem2.Name = "saveControllerProfileToolStripMenuItem2";
+            this.saveControllerProfileToolStripMenuItem2.Size = new System.Drawing.Size(218, 24);
+            this.saveControllerProfileToolStripMenuItem2.Text = "Save Controller Profile";
+            this.saveControllerProfileToolStripMenuItem2.Click += new System.EventHandler(this.saveControlProfileToolStripMenuItem_Click);
+            // 
             // remindersToolStripMenuItem3
             // 
             this.remindersToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1765,6 +1790,34 @@
             this.remindersToolStripMenuItem3.Size = new System.Drawing.Size(85, 23);
             this.remindersToolStripMenuItem3.Text = "Reminders";
             this.remindersToolStripMenuItem3.Click += new System.EventHandler(this.remindersToolStripMenuItem_Click);
+            // 
+            // loadReminderProfileToolStripMenuItem3
+            // 
+            this.loadReminderProfileToolStripMenuItem3.Name = "loadReminderProfileToolStripMenuItem3";
+            this.loadReminderProfileToolStripMenuItem3.Size = new System.Drawing.Size(215, 24);
+            this.loadReminderProfileToolStripMenuItem3.Text = "Load Reminder Profile";
+            this.loadReminderProfileToolStripMenuItem3.Click += new System.EventHandler(this.loadReminderProfileToolStripMenuItem2_Click);
+            // 
+            // saveReminderProfileToolStripMenuItem3
+            // 
+            this.saveReminderProfileToolStripMenuItem3.Name = "saveReminderProfileToolStripMenuItem3";
+            this.saveReminderProfileToolStripMenuItem3.Size = new System.Drawing.Size(215, 24);
+            this.saveReminderProfileToolStripMenuItem3.Text = "Save Reminder Profile";
+            this.saveReminderProfileToolStripMenuItem3.Click += new System.EventHandler(this.saveReminderProfileToolStripMenuItem2_Click);
+            // 
+            // rafflesToolStripMenuItem3
+            // 
+            this.rafflesToolStripMenuItem3.Name = "rafflesToolStripMenuItem3";
+            this.rafflesToolStripMenuItem3.Size = new System.Drawing.Size(62, 23);
+            this.rafflesToolStripMenuItem3.Text = "Raffles";
+            this.rafflesToolStripMenuItem3.Click += new System.EventHandler(this.rafflesToolStripMenuItem_Click);
+            // 
+            // macrosToolStripMenuItem3
+            // 
+            this.macrosToolStripMenuItem3.Name = "macrosToolStripMenuItem3";
+            this.macrosToolStripMenuItem3.Size = new System.Drawing.Size(68, 23);
+            this.macrosToolStripMenuItem3.Text = "Macros";
+            this.macrosToolStripMenuItem3.Click += new System.EventHandler(this.macrosToolStripMenuItem_Click);
             // 
             // OAuthCodeButton
             // 
@@ -1782,7 +1835,7 @@
             // 
             this.ConnectButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ConnectButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConnectButton.Location = new System.Drawing.Point(3, 100);
+            this.ConnectButton.Location = new System.Drawing.Point(0, 125);
             this.ConnectButton.Name = "ConnectButton";
             this.ConnectButton.Size = new System.Drawing.Size(472, 26);
             this.ConnectButton.TabIndex = 10;
@@ -1870,12 +1923,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TwitchIRCTextbox.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TwitchIRCTextbox.Location = new System.Drawing.Point(3, 130);
+            this.TwitchIRCTextbox.Location = new System.Drawing.Point(3, 153);
             this.TwitchIRCTextbox.Multiline = true;
             this.TwitchIRCTextbox.Name = "TwitchIRCTextbox";
             this.TwitchIRCTextbox.ReadOnly = true;
             this.TwitchIRCTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TwitchIRCTextbox.Size = new System.Drawing.Size(472, 279);
+            this.TwitchIRCTextbox.Size = new System.Drawing.Size(472, 256);
             this.TwitchIRCTextbox.TabIndex = 2;
             // 
             // fileToolStripMenuItem2
@@ -2246,54 +2299,27 @@
             0,
             0});
             // 
-            // focusGameWindowToolStripMenuItem
+            // TwitchChatClientChoice
             // 
-            this.focusGameWindowToolStripMenuItem.Name = "focusGameWindowToolStripMenuItem";
-            this.focusGameWindowToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.focusGameWindowToolStripMenuItem.Text = "Focus Game Window";
-            this.focusGameWindowToolStripMenuItem.Click += new System.EventHandler(this.setGameWindowToolStripMenuItem_Click);
+            this.TwitchChatClientChoice.FormattingEnabled = true;
+            this.TwitchChatClientChoice.Items.AddRange(new object[] {
+            "IRC",
+            "TwitchLib.Client"});
+            this.TwitchChatClientChoice.Location = new System.Drawing.Point(152, 101);
+            this.TwitchChatClientChoice.Name = "TwitchChatClientChoice";
+            this.TwitchChatClientChoice.Size = new System.Drawing.Size(121, 21);
+            this.TwitchChatClientChoice.TabIndex = 29;
+            this.TwitchChatClientChoice.SelectedIndexChanged += new System.EventHandler(this.TwitchChatClient_SelectedIndexChanged);
             // 
-            // loadControllerProfileToolStripMenuItem2
+            // label6
             // 
-            this.loadControllerProfileToolStripMenuItem2.Name = "loadControllerProfileToolStripMenuItem2";
-            this.loadControllerProfileToolStripMenuItem2.Size = new System.Drawing.Size(218, 24);
-            this.loadControllerProfileToolStripMenuItem2.Text = "Load Controller Profile";
-            this.loadControllerProfileToolStripMenuItem2.Click += new System.EventHandler(this.loadControlProfileToolStripMenuItem1_Click);
-            // 
-            // saveControllerProfileToolStripMenuItem2
-            // 
-            this.saveControllerProfileToolStripMenuItem2.Name = "saveControllerProfileToolStripMenuItem2";
-            this.saveControllerProfileToolStripMenuItem2.Size = new System.Drawing.Size(218, 24);
-            this.saveControllerProfileToolStripMenuItem2.Text = "Save Controller Profile";
-            this.saveControllerProfileToolStripMenuItem2.Click += new System.EventHandler(this.saveControlProfileToolStripMenuItem_Click);
-            // 
-            // loadReminderProfileToolStripMenuItem3
-            // 
-            this.loadReminderProfileToolStripMenuItem3.Name = "loadReminderProfileToolStripMenuItem3";
-            this.loadReminderProfileToolStripMenuItem3.Size = new System.Drawing.Size(215, 24);
-            this.loadReminderProfileToolStripMenuItem3.Text = "Load Reminder Profile";
-            this.loadReminderProfileToolStripMenuItem3.Click += new System.EventHandler(this.loadReminderProfileToolStripMenuItem2_Click);
-            // 
-            // saveReminderProfileToolStripMenuItem3
-            // 
-            this.saveReminderProfileToolStripMenuItem3.Name = "saveReminderProfileToolStripMenuItem3";
-            this.saveReminderProfileToolStripMenuItem3.Size = new System.Drawing.Size(215, 24);
-            this.saveReminderProfileToolStripMenuItem3.Text = "Save Reminder Profile";
-            this.saveReminderProfileToolStripMenuItem3.Click += new System.EventHandler(this.saveReminderProfileToolStripMenuItem2_Click);
-            // 
-            // rafflesToolStripMenuItem3
-            // 
-            this.rafflesToolStripMenuItem3.Name = "rafflesToolStripMenuItem3";
-            this.rafflesToolStripMenuItem3.Size = new System.Drawing.Size(62, 23);
-            this.rafflesToolStripMenuItem3.Text = "Raffles";
-            this.rafflesToolStripMenuItem3.Click += new System.EventHandler(this.rafflesToolStripMenuItem_Click);
-            // 
-            // macrosToolStripMenuItem3
-            // 
-            this.macrosToolStripMenuItem3.Name = "macrosToolStripMenuItem3";
-            this.macrosToolStripMenuItem3.Size = new System.Drawing.Size(68, 23);
-            this.macrosToolStripMenuItem3.Text = "Macros";
-            this.macrosToolStripMenuItem3.Click += new System.EventHandler(this.macrosToolStripMenuItem_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 101);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(121, 19);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Twitch Chat Client";
             // 
             // AllowOverlappingTriggers
             // 
@@ -2432,30 +2458,30 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.ControlPanel1.ResumeLayout(false);
+            this.ControlPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KeyPressDelay)).EndInit();
+            this.RemindersPanel1.ResumeLayout(false);
+            this.RemindersPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ReminderTimerBox)).EndInit();
             this.SettingsPanel1.ResumeLayout(false);
             this.SettingsPanel1.PerformLayout();
             this.ControlsSubPanel1.ResumeLayout(false);
             this.ControlsSubPanel1.PerformLayout();
+            this.SettingsSubPanel1.ResumeLayout(false);
+            this.SettingsSubPanel1.PerformLayout();
             this.RafflesSubPanel1.ResumeLayout(false);
             this.RafflesSubPanel1.PerformLayout();
             this.MacrosSubPanel1.ResumeLayout(false);
             this.MacrosSubPanel1.PerformLayout();
             this.RemindersSubPanel1.ResumeLayout(false);
             this.RemindersSubPanel1.PerformLayout();
-            this.SettingsSubPanel1.ResumeLayout(false);
-            this.SettingsSubPanel1.PerformLayout();
-            this.ControlPanel1.ResumeLayout(false);
-            this.ControlPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.KeyPressDelay)).EndInit();
-            this.WindowListPanel1.ResumeLayout(false);
             this.RafflesPanel1.ResumeLayout(false);
             this.RafflesPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.WindowListPanel1.ResumeLayout(false);
             this.MacroPanel1.ResumeLayout(false);
             this.MacroPanel1.PerformLayout();
-            this.RemindersPanel1.ResumeLayout(false);
-            this.RemindersPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReminderTimerBox)).EndInit();
             this.MainMenuStripControl.ResumeLayout(false);
             this.MainMenuStripControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -2659,6 +2685,8 @@
         private System.Windows.Forms.ToolStripMenuItem saveReminderProfileToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem rafflesToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem macrosToolStripMenuItem3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox TwitchChatClientChoice;
     }
 }
 

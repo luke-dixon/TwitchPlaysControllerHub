@@ -7,12 +7,12 @@ namespace TwitchPlaysHub
     */
     public class AutoReconnect
     {
-        private IrcClient _irc;
+        private TwitchClientInterface _irc;
         private Thread autoconnect;
         private int sleeptimer;
 
         // Empty constructor makes instance of Thread
-        public AutoReconnect(IrcClient irc, int timer)
+        public AutoReconnect(TwitchClientInterface irc, int timer)
         {
             _irc = irc;
             sleeptimer = timer;
