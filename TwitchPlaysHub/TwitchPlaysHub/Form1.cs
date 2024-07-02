@@ -3254,6 +3254,12 @@ namespace TwitchPlaysHub
             }
         }
 
+        private void backupsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackupsPanel1.Visible = true;
+            BackupsPanel1.BringToFront();
+        }
+
         private void macrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 MacroPanel1.Visible = true;
@@ -3470,6 +3476,12 @@ namespace TwitchPlaysHub
         {
             Properties.Settings.Default.AllowOverlapCheckBox = AllowOverlappingTriggers.Checked;
             Properties.Settings.Default.Save();
+        }
+
+        private void backupsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BackupsPanel1.Visible = true;
+            BackupsPanel1.BringToFront();
         }
     }
 
